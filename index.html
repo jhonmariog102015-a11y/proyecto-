@@ -3,115 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veterinaria Verde Vida | Cuidado Felino y Canino</title>
-    <link rel="icon" type="image/png" href="Captura de pantalla 2026-03-09 090938.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Veterinaria Integral | Cuidado Profesional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="Captura de pantalla 2026-03-09 090938.png" alt="Logo Veterinaria">
-            </div>
+        <div class="contenedor">
+            <div class="logo">VETERINARIA</div>
             <div class="nav-links" id="navLinks">
-                <a href="#inicio">Inicio</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#testimonios">Testimonios</a>
-                <a href="#contacto">Contacto</a>
-                <button class="btn-cta">Agendar Cita</button>
+                <a href="#">Inicio</a>
+                <a href="#">Servicios</a>
+                <button class="btn-login">
+                    <i class="fas fa-user-circle"></i> Iniciar Sesión
+                </button>
             </div>
-            <button class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
-            </button>
         </div>
     </nav>
 
-  
-    <section id="inicio" class="hero">
-        <div class="hero-container">
+    <section class="hero">
+        <div class="contenedor hero-grid">
             <div class="hero-texto">
-                <h1>Veterinaria <br> Veterinaria</h1>
-                <p>Tratamiento completo para el bienestar de tu mascota, con amor y dedicación por nuestros profesionales.</p>
-                <button class="btn-principal">Conocer Más</button>
-                <button class="btn-segundario">
-    <img src="llamar.png" alt="WhatsApp" class="btn-icon">
-    Llamar ahora
-</button>
-               
-
-                 
+                <h1>Veterinaria <br> <span>Integral</span></h1>
+                <p>Cuidamos a tus amigos de cuatro patas con amor y profesionalismo.</p>
+                <div class="hero-botones">
+                    <button class="btn-principal">Conocer Más</button>
+                    <button class="btn-segundario">
+                        <i class="fab fa-whatsapp"></i> Llamar ahora
+                    </button>
+                </div>
             </div>
             <div class="hero-imagen">
-                <img src="L6GI2ZSXFZGADESR57UO666ZE4.jpg" alt="Gato atendiendo veterinaria">
-                <div class="decoracion-hojas"></div>
-            </div>
-        </div>
-        <div class="servicios-rapidos">
-            <div class="servicio-card">
-                <i class="fas fa-stethoscope"></i>
-                <h3>Consultorios</h3>
-                <p>Evaluación médica completa para tu mascota</p>
-            </div>
-            <div class="servicio-card">
-                <i class="fas fa-syringe"></i>
-                <h3>Vacunaciones</h3>
-                <p>Calendarios adaptados a cada etapa de vida</p>
-            </div>
-            <div class="servicio-card">
-                <i class="fas fa-paw"></i>
-                <h3>Cuidados Especiales</h3>
-                <p>Atención personalizada para casos complejos</p>
+                <img src="L6GI2ZSXFZGADESR57UO666ZE4.jpg" alt="Mascota">
             </div>
         </div>
     </section>
 
-  
-    <section id="testimonios" class="testimonios">
-        <div class="testimonios-container">
-            <h2>Fontonennatios</h2>
+    <section class="servicios-seccion">
+        <div class="contenedor grid-servicios">
+            <div class="card"><i class="fas fa-stethoscope"></i><h3>Consultorios</h3></div>
+            <div class="card"><i class="fas fa-syringe"></i><h3>Vacunación</h3></div>
+            <div class="card"><i class="fas fa-pills"></i><h3>Cuidados Especiales</h3></div>
+            <div class="card"><i class="fas fa-calendar-alt"></i><h3>Agendar Cita</h3></div>
+            <div class="card"><i class="fas fa-shopping-cart"></i><h3>Productos</h3></div>
+            <div class="card"><i class="fas fa-shower"></i><h3>Baños y Estética</h3></div>
+        </div>
+    </section>
+
+    <section class="testimonios">
+        <div class="contenedor">
+            <h2>Nuestra Experiencia</h2>
             <div class="testimonios-grid">
-                <div class="testimonio-card">
-                    <h3>Foater tacitematics</h3>
-                    <p>Excelente atención para mi gato, el trato es muy cálido y los profesionales son muy capacitados.</p>
-                    <div class="calificacion">
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="autor">
-                        <img src="img/usuario1.png" alt="Usuario">
-                        <span>(FREE)</span>
-                    </div>
-                </div>
-                <div class="testimonio-card">
-                    <h3>Code evermohteis</h3>
-                    <p>Muy satisfecha con el servicio de vacunación, explicaron todo detalle y la atención fue muy rápida.</p>
-                    <div class="calificacion">
-                        <i class="fas fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                        <i class="far fa-heart"></i>
-                    </div>
-                    <div class="autor">
-                        <img src="img/usuario2.png" alt="Usuario">
-                        <span>(FREE)</span>
-                    </div>
+                <div class="testi-card">
+                    <div class="estrellas">★★★★★</div>
+                    <p>"Excelente atención, muy recomendados."</p>
+                    <strong>- Juan Pérez</strong>
                 </div>
             </div>
         </div>
     </section>
-
-   
-    <footer class="footer">
-        <div class="footer-container">
-            <p>© 2026 Veterinaria Verde Vida - Todos los derechos reservados</p>
-            <div class="footer-wave"></div>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
