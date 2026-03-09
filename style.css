@@ -6,10 +6,10 @@
 }
 
 :root {
-    --color-principal: #2ECC71;
-    --color-secundario: #27AE60;
-    --color-claro: #82E0AA;
-    --color-fondo-hero: #58D68D;
+    --color-principal: #2e78cc;
+    --color-secundario: #276dae;
+    --color-claro: #030303;
+    --color-fondo-hero: #587ad6;
     --color-fondo-testimonios: #FDF5E6;
     --color-blanco: #FFFFFF;
     --color-texto: #2C3E50;
@@ -158,7 +158,7 @@ body {
     gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
-    margin-top: -40px;
+    margin-top: 15px;
     position: relative;
     z-index: 5;
 }
