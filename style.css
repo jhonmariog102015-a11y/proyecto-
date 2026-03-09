@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color-principal: #2ECC71;
+    --color-secundario: #27AE60;
+    --color-claro: #82E0AA;
+    --color-fondo-hero: #58D68D;
+    --color-fondo-testimonios: #FDF5E6;
+    --color-blanco: #FFFFFF;
+    --color-texto: #2C3E50;
+}
+
+body {
+    color: var(--color-texto);
+    overflow-x: hidden;
+}
+
+
+.nav-container, .hero-container, .testimonios-container, .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.navbar {
+    background-color: var(--color-principal);
+    padding: 15px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-claro);
+}
+
+.btn-cta {
+    background-color: var(--color-blanco);
+    color: var(--color-principal);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: var(--color-claro);
+    color: var(--color-blanco);
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: var(--color-blanco);
+    font-size: 1.5rem;
+    display: none;
+}
+
+
+.hero {
+    background: linear-gradient(to right, var(--color-fondo-hero), var(--color-principal));
+    padding-top: 30px;
+    padding-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-texto h1 {
+    font-size: 3.5rem;
+    color: var(--color-blanco);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-texto p {
+    color: var(--color-blanco);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+.btn-principal {
+    background-color: var(--color-blanco);
+    color: var(--color-principal);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn-principal:hover {
+    transform: scale(1.05);
+}
+
+.hero-imagen {
+    position: relative;
+    text-align: center;
+}
+
+.hero-imagen img {
+    width: 80%;
+    border-radius: 10px;
+    z-index: 2;
+    position: relative;
+}
+
+.decoracion-hojas {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/hojas-decorativas.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+.servicios-rapidos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: -40px;
+    position: relative;
+    z-index: 5;
+}
+
+.servicio-card {
+    background-color: var(--color-blanco);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.servicio-card:hover {
+    transform: translateY(-5px);
+}
+
+.servicio-card i {
+    font-size: 2rem;
+    color: var(--color-principal);
+    margin-bottom: 15px;
+    background-color: rgba(46, 204, 113, 0.1);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+}
+
+.servicio-card h3 {
+    color: var(--color-principal);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.testimonios {
+    background-color: var(--color-fondo-testimonios);
+    padding: 60px 0;
+    margin-top: 40px;
+}
+
+.testimonios h2 {
+    font-size: 2rem;
+    color: var(--color-secundario);
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.testimonios h2::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: var(--color-principal);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimonios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonio-card {
+    background-color: var(--color-blanco);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.testimonio-card h3 {
+    color: var(--color-texto);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.testimonio-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.calificacion {
+    color: #E74C3C;
+    margin-bottom: 15px;
+}
+
+.autor {
+    display: flex;
+    align-items: center;
+}
+
+.autor img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.autor span {
+    color: var(--color-principal);
+    font-weight: 600;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--color-secundario);
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer p {
+    color: var(--color-blanco);
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer-wave {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-image: url('img/onda-footer.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-texto p {
+        max-width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-principal);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav-links.active {
+        max-height: 400px;
+    }
+
+    .nav-links a, .btn-cta {
+        display: block;
+        margin: 15px 20px;
+        text-align: center;
+    }
+}
