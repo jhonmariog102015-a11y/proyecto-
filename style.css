@@ -121,7 +121,43 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: transform 0.3s ease;
+    border: 2px solid #000000;
 }
+
+.btn-segundario {
+ 
+    background-color: #f8f9fa;
+    color: #000000;           
+    border: 2px solid #000000;
+    border-radius: 50px;       
+    
+    padding: 10px 24px;       
+    cursor: pointer;          
+    font-family: Arial, sans-serif; 
+    font-weight: bold;        
+    font-size: 16px;          
+
+ 
+    display: inline-flex;    
+    align-items: center;    
+    justify-content: center;
+    gap: 10px;            
+    transition: all 0.3s ease;
+}
+
+
+.btn-icon {
+    width: 20px; 
+    height: 20px;
+    object-fit: contain; 
+}
+
+
+.btn-segundario:hover {
+    background-color: #e2e6ea;
+    border-color: #333;       
+}
+    
 
 .btn-principal:hover {
     transform: scale(1.05);
