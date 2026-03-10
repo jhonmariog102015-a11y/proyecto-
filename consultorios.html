@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorios | Veterinaria Integral</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <style>
+        /* Estilos específicos para esta página */
+        .seccion-detalle { padding: 60px 0; }
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        .lista-servicios { list-style: none; margin-top: 20px; }
+        .lista-servicios li { margin-bottom: 15px; display: flex; align-items: center; font-size: 1.1rem; }
+        .lista-servicios i { color: #00b894; margin-right: 15px; font-size: 1.5rem; }
+        .badge { background: #e0f7f3; color: #00b894; padding: 5px 15px; border-radius: 20px; font-weight: 600; display: inline-block; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="contenedor nav-flex">
+            <div class="logo">VETERINARIA</div>
+            <a href="index.html" style="text-decoration: none; color: #00b894; font-weight: 600;"><i class="fas fa-arrow-left"></i> Volver al Inicio</a>
+        </div>
+    </nav>
+
+    <section class="seccion-detalle">
+        <div class="contenedor">
+            <div class="info-grid">
+                <div>
+                    <span class="badge">Atención Especializada</span>
+                    <h1>Nuestros <span>Consultorios</span></h1>
+                    <p>Contamos con instalaciones modernas y equipadas con tecnología de punta para brindar el mejor diagnóstico a tu mascota.</p>
+                    
+                    <ul class="lista-servicios">
+                        <li><i class="fas fa-check-circle"></i> Consulta general y especializada.</li>
+                        <li><i class="fas fa-check-circle"></i> Equipos de diagnóstico por imagen.</li>
+                        <li><i class="fas fa-check-circle"></i> Ambiente climatizado y libre de estrés.</li>
+                        <li><i class="fas fa-check-circle"></i> Personal médico altamente calificado.</li>
+                    </ul>
+
+                    <div class="hero-botones" style="margin-top: 30px;">
+                        <button class="btn-principal" onclick="window.location.href='https://wa.me/tu-numero'">Agendar cita por WhatsApp</button>
+                    </div>
+                </div>
+                <div class="hero-imagen">
+                    <img src="consultoio.webp" alt="Consultorio Veterinario" style="border-radius: 20px; width: 100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #f9f9f9; padding: 60px 0;">
+        <div class="contenedor" style="text-align: center;">
+            <h2>Horarios de Atención</h2>
+            <div style="margin-top: 20px; display: inline-block; text-align: left; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <p><strong>Lunes a Viernes:</strong> 8:00 AM - 7:00 PM</p>
+                <p><strong>Sábados:</strong> 9:00 AM - 4:00 PM</p>
+                <p><strong>Domingos:</strong> Solo Urgencias</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
