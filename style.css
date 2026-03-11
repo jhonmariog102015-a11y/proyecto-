@@ -13,7 +13,7 @@
 
 .navbar {
     background: linear-gradient(to right, #000000, #0378ff);
-    border-bottom: 1px solid rgba(248, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 
@@ -21,12 +21,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #cc2e2e;
+    color: #ff1515;
 }
 
 .logo {
      font-weight: 700;
-      color: #2e78cc; 
+      color: #ffffff; 
       font-size: 1.5rem;
      }
 
@@ -37,7 +37,7 @@
      }
 
 .btn-login {
-    background: #2e78cc; 
+    background: #000000; 
     color: white; 
     border: none;
     padding: 10px 20px;
@@ -49,7 +49,7 @@
 }
 
 .hero {
-    background: linear-gradient(to right, #587ad6, #2e78cc);
+    background: linear-gradient(to right, #92dbe0, #2e78cc);
     color: white;
     padding: 80px 0 140px 0; 
 
@@ -88,7 +88,7 @@
     }
 
 .btn-principal {
-    background: white;
+    background: rgb(255, 255, 255);
      color: #2e78cc;
       border: 2px solid #000;
     padding: 12px 25px;
